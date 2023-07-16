@@ -2,6 +2,7 @@
 Face-mask detection using Deep Learning and OpenCV
 
 ![fmd](https://github.com/VHP2305/Face-Mask-Detection/assets/88278435/4a5fd5e2-81a1-45b4-9aac-2920d333b120)
+[<img alt="alt_text" width="40px" src="https://github.com/VHP2305/Face-Mask-Detection/assets/88278435/4a5fd5e2-81a1-45b4-9aac-2920d333b120" />]
 
 ## About Project
 This project uses a Deep Neural Network, more specifically a Convolutional Neural Network, to differentiate between images of people with and without masks. The CNN manages to get an accuracy of around **98% on the training and test set**. Then the stored weights of this CNN are used to classify as mask or no mask, in image and real time, using OpenCV. With the webcam capturing the video, the frames are preprocessed and and fed to the model to accomplish this task. The model works efficiently with no apparent lag time between wearing/removing mask and display of prediction.
