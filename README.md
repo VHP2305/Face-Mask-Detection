@@ -12,6 +12,7 @@ This project uses a Deep Neural Network, more specifically a Convolutional Neura
 
 ### Home Page
 <img alt="alt_text" width="60%" src="https://github.com/VHP2305/Face-Mask-Detection/assets/88278435/ae907460-a7d2-465c-a551-1da74ce2da9f" />
+
 ### Upload Page
 <img alt="alt_text" width="60%" src="https://github.com/VHP2305/Face-Mask-Detection/assets/88278435/523d75ab-b01a-4b74-836b-9e74289b9225" />
 
