@@ -11,15 +11,15 @@ This project uses a Deep Neural Network, more specifically a Convolutional Neura
 ## Working 
 
 ### Home Page
-
+<img alt="alt_text" width="60%" src="https://github.com/VHP2305/Face-Mask-Detection/assets/88278435/ae907460-a7d2-465c-a551-1da74ce2da9f" />
 ### Upload Page
-
+<img alt="alt_text" width="60%" src="https://github.com/VHP2305/Face-Mask-Detection/assets/88278435/523d75ab-b01a-4b74-836b-9e74289b9225" />
 
 ### Live Mask Detction Page
+<img alt="alt_text" width="60%" src="https://github.com/VHP2305/Face-Mask-Detection/assets/88278435/aeab3ba3-d42f-4ba0-b90f-3417053c4f0e" />
 
-
-
-
+### Output
+<img alt="alt_text" width="60%" src="https://github.com/VHP2305/Face-Mask-Detection/assets/88278435/cbcf634f-727c-4d76-99a8-65ea40a45462" />
 
 ## Dataset
 
@@ -38,7 +38,7 @@ git clone https://github.com/VHP2305/Face-Mask-Detection.git
 followed by:
 
 ```
-cd FaceMaskDetector
+cd Face-Mask-Detector
 ```
 
 2. Download all libaries using::
