@@ -24,8 +24,8 @@ This project uses a Deep Neural Network, more specifically a Convolutional Neura
 
 ## Dataset
 
-The data used can be downloaded through this [link](https://data-flair.training/blogs/download-face-mask-data/) or can be downloaded from this repository as well (folders 'test' and 
-'train'). There are 1314 training images and 194 test images divided into two catgories, with and without mask.
+The data used can be downloaded from this repository (folders 'with_mask' and 'without_mask'). There are 2165 images labeled as **'with_mask'** and 1930 images 
+ labeled as **'without_mask'**.
 
 ## How to Use
 
