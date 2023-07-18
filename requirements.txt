@@ -1,0 +1,13 @@
+tensorflow
+keras
+imutils
+numpy
+opencv-python
+matplotlib
+scipy
+flask
+h5py
+imutils
+time
+PIL
+argparse
