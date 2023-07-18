@@ -1,0 +1,29 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Upload Page{% endblock %}
+
+{% block content %}
+
+<h1 class="mt-5">Upload an Image</h1><br>
+<div class = "form1">
+    
+    <form method="POST" enctype="multipart/form-data" class="mt-4">
+        <div class="mb-3">
+            <label for="file" class="form-label">Choose an image</label>
+            <input type="file" class="form-control" name="file" id="file" accept="image/*">
+        </div>
+        <button type="submit" class="btn btn-primary">Upload</button>
+    </form><br>
+    <a href="/" class="btn btn-secondary">Home</a>
+</div>
+
+<!-- <style>
+    .form1{
+    border-radius: 19px;
+    background: #fdfcfc;
+    box-shadow:  17px 17px 34px #cfcfcf,
+             17px 17px 34px #ffffff;
+    }
+</style> -->
+{% endblock %}

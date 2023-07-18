@@ -1,0 +1,74 @@
+
+
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+    <h1 class="mt-3">Webcam Page</h1>
+    <div class="mt-3">
+        <div class="video-container">
+            <img id="videoElement" class="video-element" class="img-fluid" src="{{ url_for('video_feed') }}" alt="Webcam Video" width="60%" height="60%">
+        </div>
+    </div>
+
+    <form name = "form" id="form">
+        <br>
+        <input type="hidden" id="buttonValue" name="buttonValue" value="">
+        <p id="info">Please click on the start button for live mask detection.</p>
+        <button id="toggleButton" name ="toggleButton" class="btn btn-primary" type="submit" value="Stop">Start</button>
+        <a href="/" class="btn btn-secondary">Home</a>
+
+    </form>
+
+    <script>
+        // var videoElement = document.getElementById('videoElement');
+        var toggleButton = document.getElementById('toggleButton');
+        var buttonValueInput = document.getElementById('buttonValue');
+        var paraValueInput = document.getElementById('info');
+
+
+        // var streamActive = false;
+
+        function toggleStream() {
+            if (toggleButton.textContent == "Start") {
+                toggleButton.textContent = "Stop";
+                toggleButton.value = "Start";
+                buttonValueInput.value = "Start";
+                paraValueInput.textContent = "Detecting face mask..."
+                console.log(toggleButton.textContent)
+            } else if (toggleButton.textContent == "Stop") {
+                toggleButton.textContent = "Start";
+                toggleButton.value = "Stop";
+                buttonValueInput.value = "Stop";
+                paraValueInput.textContent = "Please click on the start button for live mask detection."
+                console.log(toggleButton.textContent)
+            }
+        }
+
+        toggleButton.addEventListener('click', toggleStream);
+
+        form.addEventListener('submit', function(event) {
+    event.preventDefault();    // prevent page from refreshing
+    const formData = new FormData(form);  // grab the data inside the form fields
+    fetch('/webcam', {   // assuming the backend is hosted on the same server
+        method: 'POST',
+        body: formData,
+    }).then(function(response) {
+        // do something with the response if needed.
+        // If you want the table to be built only after the backend handles the request and replies, call buildTable() here.
+    });
+});
+    </script>
+<style>
+    .video-element {
+      display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+    }
+  
+</style>
+
+
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+<div class="HI">
+    <h1>Welcome to the face mask detection app</h1>
+    <blockquote>
+  <p align="justify">"Face Mask Detection Project" is an intelligent system designed to identify whether individuals in images or real-time video streams are wearing face masks or not. It utilizes computer vision techniques, such as deep learning and image processing, to analyze facial features and detect the presence or absence of face masks accurately. This project aims to contribute to public health and safety by assisting in monitoring compliance with face mask guidelines in various settings, including public places, workplaces, and transportation hubs. The implementation of this system can help automate the process of mask detection, enabling efficient and reliable monitoring of face mask usage.</p>
+</blockquote>
+</div>
+
+<style >
+:root {
+--color-primary: hsl(310, 100%, 65%);
+--color-secondary: hsl(160, 100%, 65%);
+--background: hsl(230, 30%, 15%);
+--text: hsl(310, 100%, 95%);
+}
+
+::selection {
+background-color: var(--color-primary);
+color: var(--background);
+-webkit-text-fill-color: var(--background);
+}
+
+* {
+box-sizing: border-box;
+}
+
+.hii{
+display: grid;
+place-content: center;
+gap: 4vh;
+min-height: 100vh;
+width: min(60ch, 100vw - 2rem);
+margin-right: auto;
+margin-left: auto;
+font-size: 1.5rem;
+line-height: 1.5;
+background-color: var(--background);
+color: var(--text);
+}
+
+
+
+blockquote {
+border-left: 5px solid;
+margin-left: 0;
+padding: 1rem 0 1rem 2rem;
+font-size: 2rem;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-image: linear-gradient(to left, #000000 0%, #0099ff 100%);
+/* (
+35deg,
+var(--color-primary),
+var(--color-secondary)
+); */
+
+p {
+margin: 0;
+}
+}
+
+</style>
+{% endblock %}

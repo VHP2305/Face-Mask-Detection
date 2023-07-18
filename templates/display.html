@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Display Page{% endblock %}
+
+{% block content %}
+    <h1 class="mt-5">Processed Image</h1>
+    <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Processed Image" class="img-fluid mt-4">
+
+    <a href="/upload" class="btn btn-secondary mt-4">Upload Another Image</a>
+    <a href="/" class="btn btn-secondary mt-4">Home</a>
+{% endblock %}
